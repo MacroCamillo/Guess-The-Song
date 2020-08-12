@@ -15,7 +15,7 @@ var SpotifyWebApi = require('spotify-web-api-node');
 var spotifyApi = new SpotifyWebApi({
   clientId: '1886ad4cab9b4ad0ae1c68cc984941f9',
   clientSecret: 'b75edb297b08480989e00a0c30fcfc2f',
-  redirectUri: 'http://localhost:8080/callback'
+  redirectUri: 'https://spotify-guessing-game.herokuapp.com/callback'
 });
 
 var scopes = ['playlist-read-private', 'playlist-read-collaborative', 'user-modify-playback-state', 
