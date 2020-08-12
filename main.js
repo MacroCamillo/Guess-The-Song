@@ -13,8 +13,8 @@ app.use(express.static(__dirname));
 var SpotifyWebApi = require('spotify-web-api-node');
 
 var spotifyApi = new SpotifyWebApi({
-  clientId: '###',
-  clientSecret: '###',
+  clientId: '1886ad4cab9b4ad0ae1c68cc984941f9',
+  clientSecret: 'b75edb297b08480989e00a0c30fcfc2f',
   redirectUri: 'http://localhost:8080/callback'
 });
 
