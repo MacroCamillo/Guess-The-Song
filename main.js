@@ -13,8 +13,8 @@ app.use(express.static(__dirname));
 var SpotifyWebApi = require('spotify-web-api-node');
 
 var spotifyApi = new SpotifyWebApi({
-  clientId: '1886ad4cab9b4ad0ae1c68cc984941f9',
-  clientSecret: 'b75edb297b08480989e00a0c30fcfc2f',
+  clientId: process.env.SPOTIFY_CLIENT_ID,
+  clientSecret: process.env.SPOTIFY_APP_SECRET,
   redirectUri: 'https://spotify-guessing-game.herokuapp.com/callback'
 });
 
